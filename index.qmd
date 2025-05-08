@@ -110,7 +110,8 @@ yarn = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesda
 <!-- Code for this problem goes in the chunk below.  -->
 
 ```{r prob-1-r}
-
+nrow(yarn)
+ncol(yarn)
 ```
 
 ```{python prob-1-python}
@@ -126,12 +127,13 @@ yarn = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesda
 
     2. (3 points) Explain how your code works, including any changes in variable types that occur during the computation. 
     
-    > Your explanation goes here 
+    > google: https://www.statology.org/r-count-true-values/ No idea how this works. 
     
 <!-- (keep the > at the front of the line, with a space after it - this is a blockquote in markdown, and sets your answers apart so that I can see them clearly) -->
 
 
 ```{r}
+sum(yarn$machine_washable, na.rm=TRUE)
 
 ```
 
